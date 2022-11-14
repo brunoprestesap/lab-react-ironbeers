@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  background-color: cornflowerblue;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divBeer {
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+.divImg {
+  display: flex;
+}
+
+.imgBeer {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.divDetail {
+  padding: 10px;
+}
+
+.divDetail * {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.divBeer h3 {
+  color: grey;
+}
+
+.divBeer p {
+  font-size: 12px;
+}
+
+.div-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-detail {
+  height: 85vh;
+  width: auto;
+  padding: 10px 10px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-detail img {
+  max-height: 30vh;
+  max-width: 30vw;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.description {
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+}
+
+.contributed {
+  color: grey;
+  padding: 10px 10px;
 }
