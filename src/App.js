@@ -6,6 +6,7 @@ import PageDetails from "./pages/PageDetails";
 import RandomBeer from "./pages/RandomBeer";
 import { useState, useEffect} from 'react';
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [beers, setBeers] = useState([]);
